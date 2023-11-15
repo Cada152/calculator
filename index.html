@@ -28,26 +28,6 @@
         <button onclick="calculateResult()">=</button>
         <button onclick="appendToDisplay('/')">/</button>
       </div>
-    </div>
-
-    <script>
-    function appendToDisplay(value) {
-      document.getElementById("display").value += value;
-    }
-    
-    function clearDisplay() {
-      document.getElementById("display").value = "";
-    }
-    
-    function calculateResult() {
-      try {
-        document.getElementById("display").value = eval(document.getElementById("display").value);
-      } catch (error) {
-        document.getElementById("display").value = "Error";
-      }
-    }
-    
-
-  </script>  
+    </div>  
   </body>
 </html>
